@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "./styles.css"  />
+    <script src="https://kit.fontawesome.com/d1225833c3.js" crossorigin="anonymous"></script>    
+    <title>Powerblog</title>
+</head>
+<body>
+    <header>
+        <div class = "header-container">
+            <i class="fa-solid fa-bars hamburger-menu"></i>
+            <div>
+                <i class="fa-solid fa-bolt-lightning logo"></i>
+                <span class = "title">POWERBLOG</span>
+            </div>
+        </div>
+        <div class = "header-container">
+            <input placeholder="Search"/>
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <button class = "click-to-action-contact">Contact</button>
+        </div>
+    </header>
+    <div class = "main-container">
+        <main>
+            <section>
+                <article class = "article-1">
+                    <div class = "article-image">
+                        <img src = "https://assets.website-files.com/624a0494562144f492089904/624a0c6fc9692de550d75c7b_Des-07.jpg" alt = "article photo" />
+                        <div class = "image-info" >
+                            <span class = "article-category-name">Design</span>
+                            <span class = "article-date">April 2, 2021</span>
+                        </div>
+                    </div>
+                    <div class = "article-description">
+                        <h1 class = "article-title article-title-main">How art and culture helps us rethink our time</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        <div class = "writer-info">By Michael Keller</div>
+                    </div>
+                </article>
+                <article class = "article-2">
+                    <div class = "article-image">
+                        <img src = "https://assets.website-files.com/624a0494562144f492089904/624a098881d5ed4279396737_Cult-06.jpg" alt = "article photo" />
+                        <div class = "image-info" >
+                            <span class = "article-category-name">Design</span>
+                            <span class = "article-date"> April 2, 2021</span>
+                        </div>
+                    </div>
+                    <div class = "article-description">
+                        <h1 class = "article-title">How art and culture helps us rethink our time</h1>
+                        <div class = "writer-info">By Michael Keller</div>
+                    </div>
+                </article>
+                <article class = "article-3">
+                    <div class = "article-image article-3">
+                        <img src = "https://assets.website-files.com/624a0494562144f492089904/624a0b1523e2fe1d9cba625d_Tech-07.jpg" alt = "article photo" />
+                        <div class = "image-info" >
+                            <span class = "article-category-name">Design</span>
+                            <span class = "article-date">April 2, 2021</span>
+                        </div>
+                    </div>
+                    <div class = "article-description">
+                        <h1 class = "article-title">How art and culture helps us rethink our time</h1>
+                        <div class = "writer-info">By Michael Keller</div>
+                    </div>
+                </article>
+            </section>
+            <aside>
+                <div class = "article-side-header">
+                    <h1>Business</h1>
+                    <button>View all </button>
+                </div>
+                <div class = "side-article article-1">
+                    <div class = "side-article-image">
+                        <img src = "https://assets.website-files.com/624a0494562144f492089904/624a0c9a1d8c7b7e45983d56_Biz-01.jpg" alt = "article photo" />
+                    </div>
+                    <span>Basic Threat Modelling For Bitcoin Mining At Home</span>
+                </div>
+                <div class = "side-article article-1">
+                    <div class = "side-article-image">
+                        <img src = "https://assets.website-files.com/624a0494562144f492089904/624a0cc77b96d3126310c2d5_Biz-03.jpg" alt = "article photo" />
+                    </div>
+                    <span>Avoid tax, charity, and social media scams this summer</span>
+                </div>
+                <div class = "side-article article-1">
+                    <div class = "side-article-image">
+                        <img src = "https://assets.website-files.com/624a0494562144f492089904/624a0cee70bab0b33ecc6402_Biz-02.jpg" alt = "article photo" />
+                    </div>
+                    <span>When you think about stocks, don't think too much about the current news</span>
+                </div>
+                <div class = "side-article article-1">
+                    <div class = "side-article-image">
+                        <img src = "https://assets.website-files.com/624a0494562144f492089904/624a0d1507e477079d19e5d9_Biz-04.jpg" alt = "article photo" />
+                    </div>
+                    <span>Is employment at its peak?</span>
+                </div>
+                <div class = "side-article article-1">
+                    <div class = "side-article-image">
+                        <img src = "https://assets.website-files.com/624a0494562144f492089904/624a0d3c186ec750073e99fc_Biz-05.jpg" alt = "article photo" />
+                    </div>
+                    <span>Regulators raid companies involved in natural gas</span>
+                </div>           
+            </aside>
+        </main>
+    </div>
+    <section class = "form-section">
+        <div class="form-content">
+            <div class = "form-left-panel">
+                <h1>Subscribe to our Newsletter</h1>
+                <span>Our best articles, news and stories, delivered to your inbox every week. </span>
+            </div>
+           <form>
+               <label for = "username"> Username </label> <input required maxlength="45" name = "username" id = "username" type = "text" placeholder="Enter your name"/>
+               <label for = "email"> Email </label><input required name = "email" id = "email" type = "email" placeholder="Enter your email"/>
+               <label for = "password"> Password </label> <input required maxlength="45" name = "password" id = "password" type ="password" placeholder="Enter password"/>
+               <button>Submit</button>
+           </form>
+        </div>
+    </section>
+    
+</body>
+</html>
