@@ -1,44 +1,46 @@
 .main {
-    display: flex;
-    flex-wrap: wrap;
-    width: 200px;
-    height: 200px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 100px;
+}
 
-  .item {
-    width: 100px;
-    height: 100px;
-  }
+.item {
+  width: 100px;
+  height: 100px;
+}
 
-  .item-1 {
-    background: red;
-    transition: 1s;
-  }
+.item-1 {
+  background: red;
+  transition: 1s;
+}
 
-  .item-2 {
-    background: yellow;
-    transition: 1s;
-  }
+.item-2 {
+  background: yellow;
+  transition: 1s;
+}
 
-  .item-3 {
-    background: blue;
-    transition: 1s;
-  }
+.item-3 {
+  background: blue;
+  transition: 1s;
+}
 
-  .item-4 {
-    background: green;
-    transition: 1s;
-  }
+.item-4 {
+  background: green;
+  transition: 1s;
+}
 
-  .main:hover .item-1 {
-    transform: rotate(90deg);
-  }
-  .main:hover .item-2 {
-    transform: rotate(90deg);
-  }
-  .main:hover .item-3 {
-    transform: rotate(90deg);
-  }
-  .main:hover .item-4 {
-    transform: rotate(90deg);
-  }
+.main:hover .item-1 {
+  transform: translate(-100%) rotate(90deg);
+}
+.main:hover .item-2 {
+  transform:  translateX(100%) rotate(-90deg);
+}
+.main:hover .item-3 {
+  transform: translate(-100%) rotate(-90deg);
+}
+.main:hover .item-4 {
+  transform: translateX(100%) rotate(90deg);
+}
