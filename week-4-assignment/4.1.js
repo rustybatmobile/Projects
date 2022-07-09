@@ -43,7 +43,7 @@ class Promise {
     }
 }
 
-const getNumber = new Promise((resolve, reject) => {
+const getNumber = delay => new Promise((resolve, reject) => {
     setTimeout(() => {
         let number = Math.floor(Math.random() * 50);
         if(number %  5) {
@@ -51,9 +51,9 @@ const getNumber = new Promise((resolve, reject) => {
         }else {
             reject(number)
         }
-    }, 1000);
+    }, delay);
 });
-getNumber.then((res) => {
+getNumber(2000).then((res) => {
     console.log(res);
 }, (err) => {
     console.log(err);
