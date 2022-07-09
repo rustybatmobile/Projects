@@ -4,7 +4,7 @@ class Promise {
         this.onFulfilledCallbacks = [];
         this.onRejectedCallbacks = [];
 
-        const resolve = value => {
+        function resolve(value){
             if (this.status === "pending") {
                 this.status = "fulfilled";
                 this.value = value;
@@ -12,7 +12,7 @@ class Promise {
             }
         };
 
-        const reject = value => {
+        function reject(value) {
             if (this.status === "pending") {
                 this.status = "rejected";
                 this.value = value;
@@ -21,7 +21,7 @@ class Promise {
         };
 
         try {
-            handler(resolve, reject);
+            handler(resolve.bind(this), reject.bind(this));
         } catch (err) {
             reject(err);
         }
