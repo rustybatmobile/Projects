@@ -43,10 +43,17 @@ class Promise {
     }
 }
 
-const p3 = new Promise((resolve, reject) => {
-    setTimeout(() => resolve('Done'), 1000);
+const getNumber = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        let number = Math.floor(Math.random() * 50);
+        if(number %  5) {
+            resolve(number)
+        }else {
+            reject(number)
+        }
+    }, 1000);
 });
-p3.then((res) => {
+getNumber.then((res) => {
     console.log(res);
 }, (err) => {
     console.log(err);
