@@ -1,0 +1,14 @@
+{
+  "name": "5.4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mathOperations.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.3"
+  }
+}
