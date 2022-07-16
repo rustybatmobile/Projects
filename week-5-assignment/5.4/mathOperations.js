@@ -14,7 +14,11 @@ const mathOperations = {
         }
     },
     product: function(a = 0, b = 0) {
-        return a * b
+        if(typeof a === "number" && typeof b === "number") {
+            return a * b
+        } else {
+            return 0
+        }
     }
 }
 
