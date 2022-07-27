@@ -84,3 +84,6 @@ function reverseLinkedList(head) {
 
 
 console.log(reverseLinkedList(head));
+
+//Time Complexity: O(n) -> length of the linked list
+//Space Complexity: O(1) 
