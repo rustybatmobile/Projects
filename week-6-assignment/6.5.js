@@ -4,6 +4,9 @@ function findPair(arr, size, n) {
 
     bubbleSort(arr, size);
 
+    //using two pointers here at either ends, and if the differnece is 
+    // under the target, then incrementing the left side pointer and if over, decrementing the right pointer until the target differnce is reached. 
+
     while (i < size && j < size) {
         if (i != j && arr[j] - arr[i] == n) {
             return true;

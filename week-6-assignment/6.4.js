@@ -10,6 +10,9 @@ function maxProfit(arr) {
 
     let max_profit = 0;
 
+    //for each item in the traversal, we check it against every item after
+    //  it to see if there's a max-value in the difference and the right side value should be greater
+
     for(let i = 0; i <arr.length - 1; i++) {
         for(let j = i + 1; j < arr.length; j++) {
             if((arr[j] - arr[i]) > max_profit) {
