@@ -68,6 +68,10 @@ function reverseLinkedList(head) {
     let current = head;
     let prevNode = null;
 
+    //we traverse through it one by one, switching the direction
+    //eg: e -> d -> c -> b -> a (start)
+    //step 1: null <- e  | d -> c -> b -> a  (while a reference of "d" is stored as nextNode so its not lost and continue till the end )
+
     while(current) {
         let nextNode = current.next;
         current.next = prevNode;
