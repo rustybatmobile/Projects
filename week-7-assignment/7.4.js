@@ -40,7 +40,6 @@ class Stack {
     print() {
         console.log(this.data);
     }
-
 }
 
 function paranthesisChecker(str) {

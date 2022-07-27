@@ -1,5 +1,5 @@
-const spiralOrder = function (matrix) {
-	const arr = []
+const spiralMatrix = function (matrix) {
+	const arr = [];
 
 	//set the bounds of the matrix
 	let rowTop = 0
@@ -51,4 +51,12 @@ const spiralOrder = function (matrix) {
 };
 
 const arr = [["a", "b", "c", "d", "e"], ["f", "g", "h", "i", "j"], ["u", "v", "m", "n", "o"], ["p", "q", "r", "s", "t"]];
-console.log(spiralOrder(arr))
+console.log(spiralMatrix(arr))
+
+//Time complexity: O(n^2) // There's a while loop and a few loops inside of it, but the inside ones are not nested within each other. 
+//So, let's count all those for loops as just one and one parent while loop. So --> O(n^2)
+
+//Space complexity: O(m*n) //Where m is the no of rows and n is the no of columns and arr contains these many items. 
+
+
+

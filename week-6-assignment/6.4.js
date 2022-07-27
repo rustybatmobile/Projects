@@ -23,3 +23,9 @@ function maxProfit(arr) {
 }
 
 console.log(maxProfit([7,6,4,3,1]))
+
+//Time complexity: O(n^2) // Two loops are present, rest are O(1) operations so ignored
+
+//Space complexity: O(1) //Because max_profit stores one value at a time and nothing more
+
+

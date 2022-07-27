@@ -46,3 +46,10 @@ function bubbleSort(arr, n) {
     
     }
 }
+
+
+//Bubble sort = O(n^2) +
+//While loop = O(n) 
+
+//Time complexity: O(n^2) --> Although sorting can be brought down to O(nlogn)
+//Space complexity: O(1) --> Mutating the array a lot and only holding i and j values, so O(1)
