@@ -1,47 +1,82 @@
-class Stack {
-    constructor(maxLength) {
+class MyStack {
+    constructor() {
+        this.items = [];
         this.top = -1;
-        this.data = [];
-        this.maxLength = maxLength;
+        this.maxSize = 5;
+    }
+
+    get size() {
+        return this.items.length;
     }
 
     push(value) {
-        if(this.top <= this.maxLength) {
-            this.data.push(value);
-            this.top++;
+        if(this.size < this.maxSize) {
+            this.items.push(value);
+            this.top = value;
+            return value;
         } else {
             throw "Stack overflow"
         }
     }
 
+    logItems() {
+        console.log(this.items)
+    }
+
+    get isEmpty() {
+        return this.items.length === 0;
+    }
+
     pop() {
-        if(this.top >= 0) {
-            this.data.pop();
-            this.top--;
+
+        let currentSize = this.size;
+        if(currentSize === 0) {
+            throw "Stack underflow"
         } else {
-            return "Stack underflow"
+
+            if(currentSize == 1) {
+                this.top = -1;
+            } else {
+                this.top = this.items[currentSize - 2];
+            }
+            this.items.pop();
+            return this.top;
         }
     }
 
     peek() {
-        if(this.top === -1) {
-            return "Stack is empty"
-        } 
-        return this.data[this.top];
-    }
-
-    isEmpty() {
-        if(this.data.length === 0) {
-            return true;
+        let currentSize = this.size;
+        if(currentSize == 0) {
+            throw "Stack is empty"
+        } else {
+            return this.top;
         }
-        return false;
-    }
-
-    print() {
-        console.log(this.data);
     }
 }
+
 
 module.exports = {
-    Stack
+    MyStack
 }
+
+try{
+    let myStack = new MyStack();
+    myStack.push(5);
+    myStack.push(3);
+    myStack.push(4);
+    myStack.push(6);
+    myStack.pop();
+    myStack.pop();
+    myStack.pop();
+    myStack.pop();
+  
+
+  
+
+    myStack.logItems();
+} catch(err) {
+    console.log(err)
+}
+
+
+
