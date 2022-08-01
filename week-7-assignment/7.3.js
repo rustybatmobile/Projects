@@ -46,3 +46,6 @@ function detectingLoop(head, N) {
 }
 
 console.log(detectingLoop(head))
+
+//Time complexity: O(N) because it has to traverse through all the nodes in the LL
+//Space complexity: O(1) //because we only have to return true or false acc to a condition
