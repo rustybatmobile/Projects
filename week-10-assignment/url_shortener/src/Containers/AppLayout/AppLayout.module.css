@@ -1,0 +1,10 @@
+.app_layout {
+    background-color: #F0F1F5;
+    height: 40rem;
+}
+
+.app_layout_container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
